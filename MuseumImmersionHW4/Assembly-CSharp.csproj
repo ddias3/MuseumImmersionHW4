@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera\CameraPowerSwitch.cs" />
      <Compile Include="Assets\Scripts\EnvironmentScripts\DoorScript.cs" />
+     <Compile Include="Assets\Scripts\EnvironmentScripts\DoorTriggerScript.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\CharacterMotor.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\FPSInputController.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\MouseLook.cs" />
