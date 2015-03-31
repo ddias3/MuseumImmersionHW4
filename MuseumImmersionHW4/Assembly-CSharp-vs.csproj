@@ -46,6 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Camera\CameraPowerSwitch.cs" />
+     <Compile Include="Assets\Scripts\EnvironmentScripts\DoorScript.cs" />
+     <Compile Include="Assets\Scripts\First-Person Controller\CharacterMotor.cs" />
+     <Compile Include="Assets\Scripts\First-Person Controller\FPSInputController.cs" />
+     <Compile Include="Assets\Scripts\First-Person Controller\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\First-Person Controller\PlatformInputController.cs" />
      <Compile Include="Assets\Scripts\NoclipCamera.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
