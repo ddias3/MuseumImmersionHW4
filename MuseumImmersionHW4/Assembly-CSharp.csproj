@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\First-Person Controller\FPSInputController.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\MouseLook.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\PlatformInputController.cs" />
+     <Compile Include="Assets\Scripts\Moving Objects\moveObject.cs" />
      <Compile Include="Assets\Scripts\NoclipCamera.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
