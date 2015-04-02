@@ -6,6 +6,7 @@ public class collisionNoiseCheck : MonoBehaviour {
 	public AudioSource mySource;
 
 	public AudioClip wallClip;	
+	public AudioClip canClip;
 
 	// Use this for initialization
 	void Start () {
@@ -30,6 +31,12 @@ public class collisionNoiseCheck : MonoBehaviour {
 			mySource.clip = wallClip;
 			mySource.Play();
 			print("WALL COLLISION");
+		}
+
+		if(other.gameObject.tag == "Can"){
+			mySource.clip = canClip;
+			mySource.Play();
+			print("CAN COLLISION");
 		}
 	}
 
