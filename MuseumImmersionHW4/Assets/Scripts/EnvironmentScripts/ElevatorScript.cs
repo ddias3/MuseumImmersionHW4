@@ -46,6 +46,7 @@ public class ElevatorScript : MonoBehaviour
 			if (!playedClose)
 			{
 				source.clip = elevatorClose;
+				source.volume = 0.24f;
 				source.Play();
 				playedClose = true;
 			}
@@ -62,6 +63,7 @@ public class ElevatorScript : MonoBehaviour
 			if (!playedOpen)
 			{
 				source.clip = elevatorOpen;
+				source.volume = 1.0f;
 				source.Play();
 				playedOpen = true;
 			}

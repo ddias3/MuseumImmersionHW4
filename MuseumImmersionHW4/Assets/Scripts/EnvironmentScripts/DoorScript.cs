@@ -26,8 +26,6 @@ public class DoorScript : MonoBehaviour
 	public AudioClip doorOpen;
 	public AudioClip doorClose;
 
-	private bool playSound = false;
-
 	void Start()
 	{
 		originalRotation = doorTransform.localRotation;
@@ -39,6 +37,10 @@ public class DoorScript : MonoBehaviour
 		switch (state)
 		{
 		case -1:
+			if(currentDegreeInterp == 0){
+				doorSource.clip = doorOpen;
+				doorSource.Play ();
+			}
 			if (currentDegreeInterp > -1)
 			{
 				currentDegreeInterp -= interpDelta * Time.deltaTime;
@@ -48,16 +50,13 @@ public class DoorScript : MonoBehaviour
 			}
 			break;
 		case 0:
+			if(currentDegreeInterp >= 1 || currentDegreeInterp <= -1){
+				doorSource.clip = doorClose;
+				doorSource.Play ();
+			}
 			if (Mathf.Abs(currentDegreeInterp) < 0.005f)
 			{
 				currentDegreeInterp = 0.0f;
-
-				if (playSound)
-				{
-					doorSource.clip = doorClose;
-					doorSource.Play();
-					playSound = false;
-				}
 			}
 			else if (currentDegreeInterp < 0)
 			{
@@ -111,25 +110,14 @@ public class DoorScript : MonoBehaviour
 		if (!triggerBackTriggered && !triggerFrontTriggered)
 		{
 			state = 0;
-			playSound = true;
-
-			//doorSource.clip = doorOpen;
-			//doorSource.Play ();
-			//This was causing door open sound to play twice - Patrick
 		}
 		else if (triggerBackTriggered && !triggerFrontTriggered && state == 0)
 		{
 			state = -1;
-
-			doorSource.clip = doorOpen;
-			doorSource.Play ();
 		}
 		else if (!triggerBackTriggered && triggerFrontTriggered && state == 0)
 		{
 			state = 1;
-
-			doorSource.clip = doorOpen;
-			doorSource.Play ();
 		}
 	}
 }
