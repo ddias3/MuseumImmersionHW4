@@ -2103,6 +2103,9 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+  doorSource: {fileID: 0}
+  doorOpen: {fileID: 0}
+  doorClose: {fileID: 0}
 --- !u!1 &1690868283
 GameObject:
   m_ObjectHideFlags: 0

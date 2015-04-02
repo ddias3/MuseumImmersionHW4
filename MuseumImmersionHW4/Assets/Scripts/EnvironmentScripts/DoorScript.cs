@@ -22,6 +22,10 @@ public class DoorScript : MonoBehaviour
 	private bool triggerFrontTriggered;
 	private bool triggerBackTriggered;
 
+	public AudioSource doorSource;
+	public AudioClip doorOpen;
+	public AudioClip doorClose;
+
 	void Start()
 	{
 		originalRotation = doorTransform.localRotation;
@@ -33,6 +37,10 @@ public class DoorScript : MonoBehaviour
 		switch (state)
 		{
 		case -1:
+			if(currentDegreeInterp == 0){
+				doorSource.clip = doorOpen;
+				doorSource.Play ();
+			}
 			if (currentDegreeInterp > -1)
 			{
 				currentDegreeInterp -= interpDelta * Time.deltaTime;
@@ -42,6 +50,10 @@ public class DoorScript : MonoBehaviour
 			}
 			break;
 		case 0:
+			if(currentDegreeInterp >= 1 || currentDegreeInterp <= -1){
+				doorSource.clip = doorClose;
+				doorSource.Play ();
+			}
 			if (Mathf.Abs(currentDegreeInterp) < 0.005f)
 			{
 				currentDegreeInterp = 0.0f;
@@ -56,6 +68,10 @@ public class DoorScript : MonoBehaviour
 			}
 			break;
 		case 1:
+			if(currentDegreeInterp == 0){
+				doorSource.clip = doorOpen;
+				doorSource.Play ();
+			}
 			if (currentDegreeInterp < 1)
 			{
 				currentDegreeInterp += interpDelta * Time.deltaTime;
