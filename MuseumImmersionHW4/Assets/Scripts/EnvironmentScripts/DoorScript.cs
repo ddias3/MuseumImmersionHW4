@@ -113,8 +113,9 @@ public class DoorScript : MonoBehaviour
 			state = 0;
 			playSound = true;
 
-			doorSource.clip = doorOpen;
-			doorSource.Play ();
+			//doorSource.clip = doorOpen;
+			//doorSource.Play ();
+			//This was causing door open sound to play twice - Patrick
 		}
 		else if (triggerBackTriggered && !triggerFrontTriggered && state == 0)
 		{
