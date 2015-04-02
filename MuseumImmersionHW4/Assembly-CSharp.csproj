@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\CollisionSounds\collisionNoiseCheck.cs" />
      <Compile Include="Assets\Scripts\EnvironmentScripts\DoorScript.cs" />
      <Compile Include="Assets\Scripts\EnvironmentScripts\DoorTriggerScript.cs" />
+     <Compile Include="Assets\Scripts\EnvironmentScripts\ElevatorScript.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\CharacterMotor.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\FPSInputController.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\MouseLook.cs" />
