@@ -4736,7 +4736,7 @@ MonoBehaviour:
   fromID: 0
   toID: 1
   lerpProgress: 0
-  lerpSpeed: .00999999978
+  lerpSpeed: .00700000022
 --- !u!82 &1804602453
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6251,32 +6251,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPoints:
-  - {fileID: 1657811711}
-  - {fileID: 1430753638}
-  - {fileID: 1700760032}
-  - {fileID: 820472397}
-  - {fileID: 1288573334}
-  - {fileID: 687928110}
-  - {fileID: 2080488522}
-  - {fileID: 1090474237}
-  - {fileID: 328665000}
-  - {fileID: 516978428}
-  - {fileID: 394025473}
-  - {fileID: 1359714342}
-  - {fileID: 1381089749}
-  - {fileID: 1448020029}
-  - {fileID: 962376695}
-  - {fileID: 841944882}
-  - {fileID: 74178648}
-  - {fileID: 693773605}
-  - {fileID: 323100931}
-  - {fileID: 1493945463}
-  - {fileID: 156783410}
+  - {fileID: 607781806}
+  - {fileID: 986010085}
+  - {fileID: 1910107060}
+  - {fileID: 1871858768}
   lerpObject: {fileID: 2127969297}
   fromID: 0
   toID: 1
   lerpProgress: 0
-  lerpSpeed: .00999999978
+  lerpSpeed: .00300000003
 --- !u!114 &2127969301
 MonoBehaviour:
   m_ObjectHideFlags: 0
