@@ -24,8 +24,14 @@ public class collisionNoiseCheck : MonoBehaviour {
 			mySource.Play();
 			print("WALL COLLISION");
 		}
+		if(other.gameObject.tag == "Can"){
+			mySource.clip = canClip;
+			mySource.Play();
+			print("CAN COLLISION");
+		}
 	}
 
+	/*
 	void OnTriggerEnter(Collider other){
 		if(other.gameObject.tag == "Wall"){
 			mySource.clip = wallClip;
@@ -39,5 +45,5 @@ public class collisionNoiseCheck : MonoBehaviour {
 			print("CAN COLLISION");
 		}
 	}
-
+	*/
 }
