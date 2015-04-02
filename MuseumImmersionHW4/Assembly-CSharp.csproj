@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera\CameraPowerSwitch.cs" />
+     <Compile Include="Assets\Scripts\CameramanTiming.cs" />
      <Compile Include="Assets\Scripts\CollisionSounds\collisionNoiseCheck.cs" />
      <Compile Include="Assets\Scripts\EnvironmentScripts\DoorScript.cs" />
      <Compile Include="Assets\Scripts\EnvironmentScripts\DoorTriggerScript.cs" />
@@ -55,8 +56,10 @@
      <Compile Include="Assets\Scripts\First-Person Controller\FPSInputController.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\MouseLook.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\PlatformInputController.cs" />
+     <Compile Include="Assets\Scripts\JanitorSounds.cs" />
      <Compile Include="Assets\Scripts\Moving Objects\moveObject.cs" />
      <Compile Include="Assets\Scripts\NoclipCamera.cs" />
+     <Compile Include="Assets\Scripts\PlayerFootstep.cs" />
      <Compile Include="Assets\Scripts\audioTimer.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
