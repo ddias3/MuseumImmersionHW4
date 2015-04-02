@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Moving Objects\moveObject.cs" />
      <Compile Include="Assets\Scripts\NoclipCamera.cs" />
      <Compile Include="Assets\Scripts\audioTimer.cs" />
+     <Compile Include="Assets\Scripts\guardScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
