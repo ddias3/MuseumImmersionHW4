@@ -11,9 +11,7 @@ public class PlayerFootstep : MonoBehaviour {
 	AudioClip[] clips;
 
 	AudioSource footsteps;
-	AudioSource flourLights;
 
-	int lightPoC;
 	// Use this for initialization
 	void Start () {
 		track = 0;
@@ -25,10 +23,6 @@ public class PlayerFootstep : MonoBehaviour {
 		clips[3] = footstep4;
 
 		footsteps = GameObject.Find("Player Footsteps").GetComponent<AudioSource>();
-		flourLights = GameObject.Find("Flourescent Lights").GetComponent<AudioSource>();
-
-		lightPoC = 1;
-
 	}
 	
 	// Update is called once per frame
@@ -42,17 +36,6 @@ public class PlayerFootstep : MonoBehaviour {
 				}
 				footsteps.clip = clips[track];
 				footsteps.Play();
-			}
-			if(lightPoC>0){
-				flourLights.pitch -= .001f;
-				if(flourLights.pitch <= .75){
-					lightPoC = -1;
-				}
-			}else if(lightPoC < 0){
-				flourLights.pitch += .001f;
-				if(flourLights.pitch >= 1){
-					lightPoC = 1;
-				}
 			}
 		}
 	}
