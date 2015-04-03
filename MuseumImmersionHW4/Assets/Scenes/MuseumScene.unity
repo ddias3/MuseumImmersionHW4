@@ -8762,7 +8762,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 8261692, guid: 8e31bc7a55f10594eb17c788a03a30c1, type: 2}
       propertyPath: MaxDistance
-      value: 15.4460526
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261692, guid: 8e31bc7a55f10594eb17c788a03a30c1, type: 2}
+      propertyPath: MinDistance
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e31bc7a55f10594eb17c788a03a30c1, type: 2}
@@ -10948,6 +10952,14 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 445448425}
+    - target: {fileID: 8292558, guid: 748ec28ce613801429212e8bc70116a1, type: 2}
+      propertyPath: MinDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292558, guid: 748ec28ce613801429212e8bc70116a1, type: 2}
+      propertyPath: MaxDistance
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 748ec28ce613801429212e8bc70116a1, type: 2}
   m_IsPrefabParent: 0
