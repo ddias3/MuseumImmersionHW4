@@ -63,7 +63,8 @@
      <Compile Include="Assets\TeamShooter_HW4\Scripts\PlayerFootstep.cs" />
      <Compile Include="Assets\TeamShooter_HW4\Scripts\audioTimer.cs" />
      <Compile Include="Assets\TeamShooter_HW4\Scripts\guardScript.cs" />
-     <Compile Include="Assets\TeamShooter_HW4\Scripts\proximitySoundNode.cs" />
+     <Compile Include="Assets\TeamShooter_HW4\Scripts\proximitySound\proximitySoundButton.cs" />
+     <Compile Include="Assets\TeamShooter_HW4\Scripts\proximitySound\proximitySoundNode.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
