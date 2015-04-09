@@ -65,6 +65,7 @@
      <Compile Include="Assets\TeamShooter_HW4\Scripts\Popularity\PopularityManager.cs" />
      <Compile Include="Assets\TeamShooter_HW4\Scripts\Popularity\ViewFrustum.cs" />
      <Compile Include="Assets\TeamShooter_HW4\Scripts\Popularity\ViewListener.cs" />
+     <Compile Include="Assets\TeamShooter_HW4\Scripts\TourNoticeTimer.cs" />
      <Compile Include="Assets\TeamShooter_HW4\Scripts\audioTimer.cs" />
      <Compile Include="Assets\TeamShooter_HW4\Scripts\guardScript.cs" />
      <Compile Include="Assets\TeamShooter_HW4\Scripts\proximitySound\proximitySoundButton.cs" />
