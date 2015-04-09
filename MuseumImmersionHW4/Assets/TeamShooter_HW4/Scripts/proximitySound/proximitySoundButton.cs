@@ -36,7 +36,9 @@ public class proximitySoundButton : MonoBehaviour {
 				arrayInt = 0;
 			}
 			else{
-				nodeArray[arrayInt].playTierSound();
+				if(nodeArray[arrayInt].isVisited() == false){
+					nodeArray[arrayInt].playTierSound();
+				}
 				shouldPlay = false;
 				arrayInt++;
 			}
@@ -53,7 +55,7 @@ public class proximitySoundButton : MonoBehaviour {
 
 	public void playCheck(){
 		for(int i = 0; i < nodeArray.Length; i++){
-			if(!(nodeArray[i].isVisited())){
+			if(nodeArray[i].isVisited() == false){
 				nodeArray[i].playTierSound();
 			}
 			float f = 2f;

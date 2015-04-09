@@ -31,6 +31,9 @@ public class proximitySoundNode : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(player == null){
+			player = GameObject.FindGameObjectWithTag("Player");
+		}
 		distance = Vector3.Distance(transform.position, player.transform.position);
 		if(distance <= playerThres){
 			hasBeenVisited = true;
@@ -60,17 +63,19 @@ public class proximitySoundNode : MonoBehaviour {
 	}
 
 	public void playTierSound(){
-		if(soundTier == 1){
-			tier0Sound.Play ();
-		}
-		else if(soundTier == 2){
-			tier1Sound.Play ();
-		}
-		else if(soundTier == 3){
-			tier2Sound.Play ();
-		}
-		else if(soundTier == 4){
-			tier3Sound.Play ();
+		if(hasBeenVisited == false){
+			if(soundTier == 1){
+				tier0Sound.Play ();
+			}
+			else if(soundTier == 2){
+				tier1Sound.Play ();
+			}
+			else if(soundTier == 3){
+				tier2Sound.Play ();
+			}
+			else if(soundTier == 4){
+				tier3Sound.Play ();
+			}
 		}
 	}
 
