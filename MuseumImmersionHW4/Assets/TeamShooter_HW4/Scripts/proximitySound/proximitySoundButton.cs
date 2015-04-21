@@ -6,6 +6,8 @@ public class proximitySoundButton : MonoBehaviour {
 
 	public float timer = 1f;
 
+	float timerReset;
+
 	public bool shouldTimer = false;
 
 	public bool shouldPlay = false;
@@ -16,7 +18,8 @@ public class proximitySoundButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		timerReset = timer;
+		timer = 0;
 	}
 
 	public void buttonUpdate(){
@@ -25,7 +28,7 @@ public class proximitySoundButton : MonoBehaviour {
 				timer-= Time.deltaTime;
 			}
 			else{
-				timer = 1f;
+				timer = timerReset;
 				shouldPlay = true;
 			}
 		}
@@ -34,6 +37,7 @@ public class proximitySoundButton : MonoBehaviour {
 				shouldPlay = false;
 				shouldTimer = false;
 				arrayInt = 0;
+				timer = 0;
 			}
 			else{
 				if(nodeArray[arrayInt].isVisited() == false){
