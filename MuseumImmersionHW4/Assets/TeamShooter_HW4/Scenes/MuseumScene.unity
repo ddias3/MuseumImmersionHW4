@@ -2224,13 +2224,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d53d75786e9ed458d16067296b008c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxNotifications: 5
   prefabNotificationText: {fileID: 195564, guid: fb56ab6df126af944b9433052d447fcc,
     type: 2}
   prefabNotificationArrowText: {fileID: 104674, guid: 59b634d393ad2c04fa2538dc4a27ab15,
     type: 2}
   canvas: {fileID: 2140249501}
   notificationsTitle: {fileID: 785733623}
-  maxNotifications: 5
+  museumText: {fileID: 1320102138}
+  roomText: {fileID: 432213550}
+  exhibitText: {fileID: 2140027304}
 --- !u!1 &413384971
 GameObject:
   m_ObjectHideFlags: 0
@@ -12758,9 +12761,9 @@ RectTransform:
   m_Father: {fileID: 84890764}
   m_RootOrder: 2
   m_AnchorMin: {x: .45682326, y: .724394917}
-  m_AnchorMax: {x: .45682326, y: .724394917}
-  m_AnchoredPosition: {x: 72.5, y: -11.3999996}
-  m_SizeDelta: {x: 360.5, y: 93.1999969}
+  m_AnchorMax: {x: .98300004, y: .724394917}
+  m_AnchoredPosition: {x: .294296265, y: -17.7999992}
+  m_SizeDelta: {x: 278.170013, y: 125.199997}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2140027304
 MonoBehaviour:

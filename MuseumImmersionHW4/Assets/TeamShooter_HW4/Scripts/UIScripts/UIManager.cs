@@ -5,13 +5,17 @@ using System.Collections.Generic;
 
 public class UIManager : MonoBehaviour
 {
+	public int maxNotifications = 5;
+
 	public GameObject prefabNotificationText;
 	public GameObject prefabNotificationArrowText;
 
 	public GameObject canvas;
 	public GameObject notificationsTitle;
 
-	public int maxNotifications = 5;
+	public Text museumText;
+	public Text roomText;
+	public Text exhibitText;
 
 	private int currentNotifications;
 	private UINotification[] notificationsOutput;
@@ -26,6 +30,10 @@ public class UIManager : MonoBehaviour
 		notificationsOutput = new UINotification[maxNotifications];
 		for (int n = 0; n < maxNotifications; ++n)
 			notificationsOutput[n] = null;
+
+		MuseumText = "MUSEUM!!!!";
+		RoomText = "Room 001";
+		ExhibitText = "This exhibit is the bestest exhibitionest exhibit ev4r";
 	}
 
 	void Update()
@@ -201,5 +209,23 @@ public class UIManager : MonoBehaviour
 			timeDisplayed = t;
 			notification = n.GetComponent<UINotification>();
 		}
+	}
+
+	public string MuseumText
+	{
+		get { return museumText.text; }
+		set { museumText.text = value; }
+	}
+
+	public string RoomText
+	{
+		get { return roomText.text; }
+		set { roomText.text = value; }
+	}
+
+	public string ExhibitText
+	{
+		get { return exhibitText.text; }
+		set { exhibitText.text = value; }
 	}
 }
