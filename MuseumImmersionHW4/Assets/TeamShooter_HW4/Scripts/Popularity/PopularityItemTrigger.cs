@@ -4,6 +4,7 @@ using System.Collections;
 public class PopularityItemTrigger : ViewListener
 {
 	public PopularityManager popularityManager;
+	public UIManager uiManager;
 
 	public float cooldown = 20.0f;
 	public int popularityLevel = 1;
@@ -23,6 +24,7 @@ public class PopularityItemTrigger : ViewListener
 		{
 			timeSinceLastViewed = 0.0f;
 			popularityManager.TriggerAudioCue(popularityLevel);
+			uiManager.AddNotification("Popularity", "This is a " + popularityLevel + " popular exhibit.", 6.0f);
 		}
 	}
 
