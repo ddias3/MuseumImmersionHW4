@@ -24,7 +24,21 @@ public class PopularityItemTrigger : ViewListener
 		{
 			timeSinceLastViewed = 0.0f;
 			popularityManager.TriggerAudioCue(popularityLevel);
-			uiManager.AddNotification("Popularity", "This is a " + popularityLevel + " popular exhibit.", 6.0f);
+			switch (popularityLevel)
+			{
+			case 1:
+				uiManager.AddNotification(new Color(195.0f/255, 1.0f, 1.0f), "Popularity", "This is an incredibly popular exhibit.", 6.0f);
+				break;
+			case 2:
+				uiManager.AddNotification(new Color(195.0f/255, 1.0f, 1.0f), "Popularity", "This is a very popular exhibit.", 6.0f);
+				break;
+			case 3:
+				uiManager.AddNotification(new Color(195.0f/255, 1.0f, 1.0f), "Popularity", "This is a popular exhibit.", 6.0f);
+				break;
+			case 4:
+				uiManager.AddNotification(new Color(195.0f/255, 1.0f, 1.0f), "Popularity", "This is a kind of popular exhibit.", 6.0f);
+				break;
+			}
 		}
 	}
 

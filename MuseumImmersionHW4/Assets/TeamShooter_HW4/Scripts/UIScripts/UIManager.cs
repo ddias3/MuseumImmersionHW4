@@ -44,17 +44,30 @@ public class UIManager : MonoBehaviour
 
 		foreach (NotificationWrapper notification in notificationsList)
 			if (notification.active)
-				notification.timeActive += Time.deltaTime;		
+				notification.timeActive += Time.deltaTime;
+
+		if (Input.GetKeyDown(KeyCode.U))
+			AddNotification(new Color(1.0f, 0, 0), "LOL", "YOU HAVE BEEN INDICTED", 3.0f);
+		if (Input.GetKeyDown(KeyCode.I))
+			AddNotification(new Color(0f, 0.5f, 0), "ROFL", "1234567890-asdfghjkl;',mnbvcxzadfghjkjhgfdszv", 4.0f);
+		if (Input.GetKeyDown(KeyCode.O))
+			AddNotification(new Color(1.0f, 0, 1.0f), "LMAO", "ayy lmao", 5.0f, Random.value * 360.0f);
+		if (Input.GetKeyDown(KeyCode.P))
+			AddNotification(new Color(1.0f, 0.5f, 0.5f), "qwerty", "owienraknf", 6.0f, Random.value * 360.0f);
 	}
 
-	public int AddNotification(string typeText, string infoText, float timeDisplayed)
+	public int AddNotification(Color color, string typeText, string infoText, float timeDisplayed)
 	{
+		Color updatedColor = new Color(color.r, color.g, color.b, 150.0f / 255.0f);
+
 		NotificationWrapper notification = new NotificationWrapper(timeDisplayed, Instantiate<GameObject>(prefabNotificationText));
 		notification.notification.gameObject.SetActive(false);
 		notification.notification.transform.SetParent(canvas.transform, false);
 
 		notification.notification.typeText.text = typeText;
 		notification.notification.infoText.text = infoText;
+
+		notification.notification.backgroundImage.color = updatedColor;
 
 		notification.notification.SaveYPosition();
 
@@ -65,8 +78,10 @@ public class UIManager : MonoBehaviour
 		return notification.id;
 	}
 
-	public int AddNotification(string typeText, string infoText, float timeDisplayed, float arrowRotationDegrees)
+	public int AddNotification(Color color, string typeText, string infoText, float timeDisplayed, float arrowRotationDegrees)
 	{
+		Color updatedColor = new Color(color.r, color.g, color.b, 150.0f / 255.0f);
+
 		NotificationWrapper notification = new NotificationWrapper(timeDisplayed, Instantiate<GameObject>(prefabNotificationArrowText));
 		notification.notification.gameObject.SetActive(false);
 		notification.notification.transform.SetParent(canvas.transform, false);
@@ -75,6 +90,8 @@ public class UIManager : MonoBehaviour
 		notification.notification.infoText.text = infoText;
 		notification.notification.arrowRotation = arrowRotationDegrees;
 		notification.notification.arrow.rectTransform.rotation = Quaternion.Euler(0.0f, 0.0f, arrowRotationDegrees);
+
+		notification.notification.backgroundImage.color = updatedColor;
 
 		notification.notification.SaveYPosition();
 

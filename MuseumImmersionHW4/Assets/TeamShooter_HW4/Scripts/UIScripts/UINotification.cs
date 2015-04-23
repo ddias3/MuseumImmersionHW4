@@ -11,6 +11,7 @@ public class UINotification : MonoBehaviour
 	public float arrowRotation;
 
 	public RectTransform background;
+	public Image backgroundImage;
 
 	public float yPosition = 0.0f;
 
