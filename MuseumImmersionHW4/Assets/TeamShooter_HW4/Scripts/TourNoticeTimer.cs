@@ -31,12 +31,6 @@ public class TourNoticeTimer : MonoBehaviour {
 			timer = 6000;
 		}
 	}
-	float getVolumeByDistance(){
-		Vector3 guide = GameObject.Find("TourGuide").transform.position;
-		Vector3 player = GameObject.Find("Player").transform.position;
-		distance = Vector3.Distance(guide, player);
-		return 1/distance;
-	}
 	void TourIn10(){
 		tourNotice.clip = farOffNotice;
 		tourNotice.pitch = .75f;
@@ -59,7 +53,7 @@ public class TourNoticeTimer : MonoBehaviour {
 		tourNotice.clip = tourImminent;
 		tourNotice.pitch = 1f;
 		tourNotice.volume = .8f;
-		tourNotice.volume = 1;
+		tourNotice.time = 2;
 		tourNotice.Play();
 	}
 }

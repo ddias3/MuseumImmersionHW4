@@ -12,7 +12,7 @@ public class MueseumClosingScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.O)){
+		if(Input.GetKeyDown(KeyCode.V)){
 			closingAlert.Play();
 		}
 	}
