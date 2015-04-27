@@ -9,7 +9,7 @@ public class TourNoticeTimer : MonoBehaviour {
 	float distance;
 	// Use this for initialization
 	void Start () {
-		timer = 6000;
+		timer = 7000;
 		tourNotice = GameObject.Find("Tour Notice").GetComponent<AudioSource>();
 	}
 	
@@ -21,9 +21,9 @@ public class TourNoticeTimer : MonoBehaviour {
 			TourImminent();
 		}else if(timer == 1000){
 			TourIn3();
-		}else if(timer == 2000){
+		}else if(timer == 3000){
 			TourIn5();
-		}else if(timer == 5000){
+		}else if(timer == 6000){
 			TourIn10();
 		}
 
