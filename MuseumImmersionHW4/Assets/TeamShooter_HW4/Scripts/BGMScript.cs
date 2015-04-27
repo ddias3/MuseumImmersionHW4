@@ -23,9 +23,9 @@ public class BGMScript : MonoBehaviour {
 		if(enableBGM){
 			position = playerObj.transform.position;
 			if(position.x <= 28 && position.z >=23){
-				if(!BGMplayer.clip.Equals(clips[0])){
+				if(!BGMplayer.clip.Equals(clips[2])){
 					BGMplayer.Stop();
-					BGMplayer.clip = clips[0];
+					BGMplayer.clip = clips[2];
 				}
 			}else if (position.x >= 30 && position.z >=25){
 				if(!BGMplayer.clip.Equals(clips[1])){
@@ -33,9 +33,9 @@ public class BGMScript : MonoBehaviour {
 					BGMplayer.clip = clips[1];
 				}
 			}else if (position.x >= 20 && position.z <=25){
-				if(!BGMplayer.clip.Equals(clips[2])){
+				if(!BGMplayer.clip.Equals(clips[0])){
 					BGMplayer.Stop();
-					BGMplayer.clip = clips[2];
+					BGMplayer.clip = clips[0];
 				}
 			}else{
 				BGMplayer.Stop();
