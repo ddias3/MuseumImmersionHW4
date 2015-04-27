@@ -454,7 +454,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 496738, guid: 3f19149d5fefbd84491a53ea09ebd252, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 180908, guid: 3f19149d5fefbd84491a53ea09ebd252, type: 2}
       propertyPath: m_IsActive
@@ -529,8 +529,8 @@ RectTransform:
   - {fileID: 2140027303}
   m_Father: {fileID: 2140249505}
   m_RootOrder: 0
-  m_AnchorMin: {x: .0123915747, y: .865594804}
-  m_AnchorMax: {x: .357717454, y: .978000045}
+  m_AnchorMin: {x: .634355009, y: .865594804}
+  m_AnchorMax: {x: .986840129, y: .975409687}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -1502,6 +1502,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 866538392}
   m_RootOrder: 10
+--- !u!1 &299718107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 299718108}
+  - 222: {fileID: 299718110}
+  - 114: {fileID: 299718109}
+  m_Layer: 5
+  m_Name: NotificationsBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &299718108
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 299718107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2140249505}
+  m_RootOrder: 2
+  m_AnchorMin: {x: .634355009, y: .5}
+  m_AnchorMax: {x: .986840129, y: .865594804}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &299718109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 299718107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .764705896, g: 1, b: 1, a: .196078435}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &299718110
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 299718107}
 --- !u!1 &300905901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,7 +2058,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456578, guid: 2046bd919788b9a44bb7e143fd85a319, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8272496, guid: 2046bd919788b9a44bb7e143fd85a319, type: 2}
       propertyPath: MinDistance
@@ -2224,7 +2285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d53d75786e9ed458d16067296b008c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxNotifications: 5
+  maxNotifications: 4
   prefabNotificationText: {fileID: 195564, guid: fb56ab6df126af944b9433052d447fcc,
     type: 2}
   prefabNotificationArrowText: {fileID: 104674, guid: 59b634d393ad2c04fa2538dc4a27ab15,
@@ -3920,7 +3981,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 487064, guid: df6d99f6dfaaa0a41bd35aca584f8aaa, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df6d99f6dfaaa0a41bd35aca584f8aaa, type: 2}
@@ -5395,10 +5456,10 @@ RectTransform:
   - {fileID: 1218413709}
   m_Father: {fileID: 2140249505}
   m_RootOrder: 1
-  m_AnchorMin: {x: .0123915747, y: .829570949}
-  m_AnchorMax: {x: .357717454, y: .865594804}
+  m_AnchorMin: {x: .634355009, y: .834361494}
+  m_AnchorMax: {x: .986840129, y: .865594804}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -.299999237}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &785733625
 MonoBehaviour:
@@ -6413,7 +6474,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 496296, guid: 58f385e65acff04499a85e36cda3c824, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8273566, guid: 58f385e65acff04499a85e36cda3c824, type: 2}
       propertyPath: MaxDistance
@@ -6568,7 +6629,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 402968, guid: ed51433cd4b266648aea2358a7c2f3c5, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed51433cd4b266648aea2358a7c2f3c5, type: 2}
@@ -6610,7 +6671,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 495452, guid: afa033fd2b611b34399a55c575ff2fd1, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 476838, guid: afa033fd2b611b34399a55c575ff2fd1, type: 2}
       propertyPath: m_LocalPosition.x
@@ -10060,7 +10121,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408598, guid: 8e31bc7a55f10594eb17c788a03a30c1, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8261692, guid: 8e31bc7a55f10594eb17c788a03a30c1, type: 2}
       propertyPath: rolloffMode
@@ -12606,7 +12667,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 486136, guid: 748ec28ce613801429212e8bc70116a1, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 11425122, guid: 748ec28ce613801429212e8bc70116a1, type: 2}
       propertyPath: player
@@ -12996,6 +13057,7 @@ RectTransform:
   m_Children:
   - {fileID: 84890764}
   - {fileID: 785733624}
+  - {fileID: 299718108}
   m_Father: {fileID: 381610265}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
