@@ -3557,12 +3557,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BGMplayer: {fileID: 1336008286}
+  crowdPlayer: {fileID: 0}
   playerObj: {fileID: 445448425}
-  clips:
+  BGMclips:
   - {fileID: 8300000, guid: 26f87f134d7deea499802ba62c3b5362, type: 3}
   - {fileID: 8300000, guid: ecccdfcea497f5d4aaf9f8d6bfcce9e9, type: 3}
   - {fileID: 8300000, guid: ac81f3bd596d81f47af836d55b070f14, type: 3}
   - {fileID: 8300000, guid: f2a302b42b50a0d478405438f5d3ccc2, type: 3}
+  crowdClips:
+  - {fileID: 8300000, guid: 8c33f385e1dceef47ba709276f93f4ae, type: 3}
+  - {fileID: 8300000, guid: 9132741e93dc8a44983d92c689378539, type: 3}
   buzzer: {fileID: 0}
   UImanager: {fileID: 381610266}
 --- !u!1 &453075558
