@@ -6,6 +6,7 @@ public class TourNoticeTimer : MonoBehaviour {
 	AudioSource tourNotice;
 	public AudioClip farOffNotice;
 	public AudioClip tourImminent;
+	public UIManager UImanager;
 	float distance;
 	// Use this for initialization
 	void Start () {
@@ -36,18 +37,21 @@ public class TourNoticeTimer : MonoBehaviour {
 		tourNotice.pitch = .75f;
 		tourNotice.volume = 1;
 		tourNotice.Play();
+		UImanager.AddNotification(Color.cyan, "Tour", "Tour Starting in 15 minutes!", 5);
 	}
 	void TourIn5(){
 		tourNotice.clip = farOffNotice;
 		tourNotice.pitch = .85f;
 		tourNotice.volume = 1;
 		tourNotice.Play();
+		UImanager.AddNotification(Color.cyan, "Tour", "Tour Starting in 10 minutes!", 5);
 	}
 	void TourIn3(){
 		tourNotice.clip = farOffNotice;
 		tourNotice.pitch = 1f;
 		tourNotice.volume = 1;
 		tourNotice.Play();
+		UImanager.AddNotification(Color.cyan, "Tour", "Tour Starting in 5 minutes!", 5);
 	}
 	void TourImminent(){
 		tourNotice.clip = tourImminent;
@@ -55,5 +59,6 @@ public class TourNoticeTimer : MonoBehaviour {
 		tourNotice.volume = .8f;
 		tourNotice.time = 2;
 		tourNotice.Play();
+		UImanager.AddNotification(Color.cyan, "Tour", "Tour Starting in 3 minutes!", 5);
 	}
 }
