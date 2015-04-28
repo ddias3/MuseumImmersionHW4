@@ -43,14 +43,14 @@ public class BGMScript : MonoBehaviour {
 					//Jazz
 					BGMplayer.Stop();
 					BGMplayer.clip = clips[1];
-					UImanager.roomText.text = "Artifact Room";
+					UImanager.roomText.text = "Photo Room";
 				}
 			}else if (position.x >= 20 && position.z <=25){
 				if(!BGMplayer.clip.Equals(clips[0])){
 					//Classical
 					BGMplayer.Stop();
 					BGMplayer.clip = clips[0];
-					UImanager.roomText.text = "Picture Room";
+					UImanager.roomText.text = "Painting Room";
 				}
 			}else{
 				BGMplayer.Stop();
