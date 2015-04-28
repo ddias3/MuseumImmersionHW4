@@ -31,9 +31,9 @@ public class UIManager : MonoBehaviour
 		for (int n = 0; n < maxNotifications; ++n)
 			notificationsOutput[n] = null;
 
-		MuseumText = "MUSEUM!!!!";
-		RoomText = "Room 001";
-		ExhibitText = "This exhibit is the bestest exhibitionest exhibit ev4r";
+		MuseumText = "Metro Museum";
+		RoomText = "Exploration Mode...";
+		ExhibitText = "Exhibit:None";
 	}
 
 	void Update()

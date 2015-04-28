@@ -7,8 +7,7 @@ public class buzzerScript : MonoBehaviour {
 	float origTimer = 0f;
 	
 	public AudioSource buzzSource;
-	
-
+	public UIManager UImanager;
 	public AudioClip buzzWarn;
 
 	
@@ -35,6 +34,7 @@ public class buzzerScript : MonoBehaviour {
 				buzzSource.clip = buzzWarn;
 				buzzSource.Play();
 				timer = origTimer;
+				UImanager.AddNotification(Color.red, "WARNING", "You are not authorized to be in this area", timer);
 			}
 		}
 	}
