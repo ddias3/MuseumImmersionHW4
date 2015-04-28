@@ -1,0 +1,15 @@
+Mitchell Walker
+
+-clock sounds like it is from the other side of the room
+-should put something in front of the elevator to indicate to user that they cannot enter
+-I like most of the background effects, but addition murmuring/talk about the “art” might be appropriate to add additional ambiance
+
+Thomas Cahoon
+- Remove the ball
+- Elevator needs to be noticeably blocked
+- Baby “Too quite”
+
+Danny Yi
+- Proximity nodes confusing
+- Elevator looks like can be opened
+- Alert for “Not supposed to be Here” Bleeds through walls in starting room
