@@ -1826,7 +1826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ace2028ff925944af8ed1ab5444cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 445448425}
   distance: 0
   playerThres: 4
   hasBeenVisited: 0
@@ -1840,7 +1840,7 @@ MonoBehaviour:
   tier1Sound: {fileID: 248057590}
   tier2Sound: {fileID: 2094196316}
   tier3Sound: {fileID: 187228148}
-  UImanager: {fileID: 0}
+  UImanager: {fileID: 381610266}
 --- !u!135 &233369918
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3128,7 +3128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ace2028ff925944af8ed1ab5444cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 445448425}
   distance: 0
   playerThres: 4
   hasBeenVisited: 0
@@ -3142,7 +3142,7 @@ MonoBehaviour:
   tier1Sound: {fileID: 1703506733}
   tier2Sound: {fileID: 253078733}
   tier3Sound: {fileID: 1131454912}
-  UImanager: {fileID: 0}
+  UImanager: {fileID: 381610266}
 --- !u!1 &413384971
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,7 +3220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ace2028ff925944af8ed1ab5444cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 445448425}
   distance: 0
   playerThres: 4
   hasBeenVisited: 0
@@ -3234,7 +3234,7 @@ MonoBehaviour:
   tier1Sound: {fileID: 2038845245}
   tier2Sound: {fileID: 64240800}
   tier3Sound: {fileID: 489659334}
-  UImanager: {fileID: 0}
+  UImanager: {fileID: 381610266}
 --- !u!135 &421141188
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3635,7 +3635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ace2028ff925944af8ed1ab5444cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 445448425}
   distance: 0
   playerThres: 4
   hasBeenVisited: 0
@@ -3649,7 +3649,7 @@ MonoBehaviour:
   tier1Sound: {fileID: 763333816}
   tier2Sound: {fileID: 1760773603}
   tier3Sound: {fileID: 199848373}
-  UImanager: {fileID: 0}
+  UImanager: {fileID: 381610266}
 --- !u!135 &453075561
 SphereCollider:
   m_ObjectHideFlags: 0

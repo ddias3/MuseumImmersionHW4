@@ -74,32 +74,47 @@ public class proximitySoundNode : MonoBehaviour {
 				tier0Sound.Play ();
 				if(isInterestNode){
 
-					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is right here!", 5f);
+					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is right here!", 5f, Vector3.Angle(player.transform.position, transform.position)*(180.0f / Mathf.PI));
 
 					//UImanager.SetArrowAngle(myID, Vector3.Angle(player.transform.position, transform.position));
+				}
+				else{
+					int myID = UImanager.AddNotification(Color.white, "UnvisitedTag", "An exhibit item is very close!", 5f, Vector3.Angle(player.transform.position, transform.position)*(180.0f / Mathf.PI));
 				}
 			}
 			else if(soundTier == 2){
 				tier1Sound.Play ();
 				if(isInterestNode){
+					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is close.", 5f, Vector3.Angle(player.transform.position, transform.position)*(180.0f / Mathf.PI));
 					
-					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is very close", 5f);
+					//UImanager.SetArrowAngle(myID, Vector3.Angle(player.transform.position, transform.position));
+				}
+				else{
+					int myID = UImanager.AddNotification(Color.white, "UnvisitedTag", "An exhibit item is close.", 5f, Vector3.Angle(player.transform.position, transform.position)*(180.0f / Mathf.PI));
 					//UImanager.SetArrowAngle(myID, Vector3.Angle(player.transform.position, transform.position));
 				}
 			}
 			else if(soundTier == 3){
 				tier2Sound.Play ();
 				if(isInterestNode){
+					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is in the area.", 5f, Vector3.Angle(player.transform.position, transform.position)*(180.0f / Mathf.PI));
 					
-					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is in the area.", 5f);
+					//UImanager.SetArrowAngle(myID, Vector3.Angle(player.transform.position, transform.position));
+				}
+				else{
+					int myID = UImanager.AddNotification(Color.white, "UnvisitedTag", "An unvisited exhibit is in the area!", 5f, Vector3.Angle(player.transform.position, transform.position)*(180.0f / Mathf.PI));
 					//UImanager.SetArrowAngle(myID, Vector3.Angle(player.transform.position, transform.position));
 				}
 			}
 			else if(soundTier == 4){
 				tier3Sound.Play ();
 				if(isInterestNode){
+					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is far off", 5f, Vector3.Angle(player.transform.position, transform.position)*(180.0f / Mathf.PI));
 					
-					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is far off.", 5f);
+					//UImanager.SetArrowAngle(myID, Vector3.Angle(player.transform.position, transform.position));
+				}
+				else{
+					int myID = UImanager.AddNotification(Color.white, "UnvisitedTag", "An unvisited exhibit is far off.", 5f, Vector3.Angle(player.transform.position, transform.position)*(180.0f / Mathf.PI));
 					//UImanager.SetArrowAngle(myID, Vector3.Angle(player.transform.position, transform.position));
 				}
 			}
