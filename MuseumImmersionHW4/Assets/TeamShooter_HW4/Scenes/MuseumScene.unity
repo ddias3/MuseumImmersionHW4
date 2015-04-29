@@ -576,11 +576,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f19149d5fefbd84491a53ea09ebd252, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &64392032 stripped
+--- !u!1 &64392032
 GameObject:
   m_PrefabParentObject: {fileID: 103734, guid: 3f19149d5fefbd84491a53ea09ebd252, type: 2}
   m_PrefabInternal: {fileID: 64392031}
---- !u!4 &64392033 stripped
+--- !u!4 &64392033
 Transform:
   m_PrefabParentObject: {fileID: 480646, guid: 3f19149d5fefbd84491a53ea09ebd252, type: 2}
   m_PrefabInternal: {fileID: 64392031}
@@ -602,7 +602,7 @@ MonoBehaviour:
   - {fileID: 2027141256}
   affectingItemsLayerMask: 768
   desiredItemLayer: 8
---- !u!4 &64392035 stripped
+--- !u!4 &64392035
 Transform:
   m_PrefabParentObject: {fileID: 496738, guid: 3f19149d5fefbd84491a53ea09ebd252, type: 2}
   m_PrefabInternal: {fileID: 64392031}
@@ -1051,19 +1051,19 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8cec9e4f122bd8c439b87a59a60dcfb1, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &111361379 stripped
+--- !u!4 &111361379
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 8cec9e4f122bd8c439b87a59a60dcfb1, type: 3}
   m_PrefabInternal: {fileID: 111361378}
---- !u!1 &111361380 stripped
+--- !u!1 &111361380
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: 8cec9e4f122bd8c439b87a59a60dcfb1, type: 3}
   m_PrefabInternal: {fileID: 111361378}
---- !u!1 &111361381 stripped
+--- !u!1 &111361381
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 8cec9e4f122bd8c439b87a59a60dcfb1, type: 3}
   m_PrefabInternal: {fileID: 111361378}
---- !u!1 &111361382 stripped
+--- !u!1 &111361382
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8cec9e4f122bd8c439b87a59a60dcfb1, type: 3}
   m_PrefabInternal: {fileID: 111361378}
@@ -2764,7 +2764,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 337242110}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &345749072 stripped
+--- !u!4 &345749072
 Transform:
   m_PrefabParentObject: {fileID: 430744, guid: 75e3aee0ae09a1a49b185dce2d22921e, type: 2}
   m_PrefabInternal: {fileID: 49823039}
@@ -3544,7 +3544,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1540563067}
   m_RootOrder: 1
---- !u!1 &445448425 stripped
+--- !u!1 &445448425
 GameObject:
   m_PrefabParentObject: {fileID: 180908, guid: 3f19149d5fefbd84491a53ea09ebd252, type: 2}
   m_PrefabInternal: {fileID: 64392031}
@@ -4487,7 +4487,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: .100000001
+  m_Volume: .270999998
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5324,7 +5324,7 @@ CharacterController:
   m_SkinWidth: .0799999982
   m_MinMoveDistance: .00100000005
   m_Center: {x: 0, y: 2, z: 0}
---- !u!4 &714615991 stripped
+--- !u!4 &714615991
 Transform:
   m_PrefabParentObject: {fileID: 409568, guid: 2bc53194653608543aa2b650b7feaef9, type: 2}
   m_PrefabInternal: {fileID: 792568483}
@@ -7113,7 +7113,7 @@ Transform:
   - {fileID: 20033729}
   m_Father: {fileID: 1213365610}
   m_RootOrder: 4
---- !u!4 &865749730 stripped
+--- !u!4 &865749730
 Transform:
   m_PrefabParentObject: {fileID: 430744, guid: 75e3aee0ae09a1a49b185dce2d22921e, type: 2}
   m_PrefabInternal: {fileID: 1963433255}
@@ -7511,7 +7511,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75e3aee0ae09a1a49b185dce2d22921e, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &923833724 stripped
+--- !u!4 &923833724
 Transform:
   m_PrefabParentObject: {fileID: 430744, guid: 75e3aee0ae09a1a49b185dce2d22921e, type: 2}
   m_PrefabInternal: {fileID: 923833723}
@@ -9010,7 +9010,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1218413708}
---- !u!82 &1268799990 stripped
+--- !u!82 &1268799990
 AudioSource:
   m_PrefabParentObject: {fileID: 8292778, guid: 3f19149d5fefbd84491a53ea09ebd252,
     type: 2}
@@ -9927,7 +9927,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f2a302b42b50a0d478405438f5d3ccc2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .467000008
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11577,7 +11577,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .672999978
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12907,7 +12907,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1768085459}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1777510057 stripped
+--- !u!4 &1777510057
 Transform:
   m_PrefabParentObject: {fileID: 482450, guid: 71197a66443290d40a6a560721b3caa0, type: 2}
   m_PrefabInternal: {fileID: 1758594516}

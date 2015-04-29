@@ -44,18 +44,21 @@ public class BGMScript : MonoBehaviour {
 				if(!BGMplayer.clip.Equals(BGMclips[2])){
 					//Tribal
 					BGMplayer.Stop();
+					BGMplayer.volume = 0.25f;
 					BGMplayer.clip = BGMclips[2];
 				}
 			}else if (position.x >= 30 && position.z >=25){
 				if(!BGMplayer.clip.Equals(BGMclips[1])){
 					//Jazz
 					BGMplayer.Stop();
+					BGMplayer.volume = 0.5f;
 					BGMplayer.clip = BGMclips[1];
 				}
 			}else if (position.x >= 20 && position.z <=25){
 				if(!BGMplayer.clip.Equals(BGMclips[0])){
 					//Classical
 					BGMplayer.Stop();
+					BGMplayer.volume = 0.25f;
 					BGMplayer.clip = BGMclips[0];
 				}
 			}else{

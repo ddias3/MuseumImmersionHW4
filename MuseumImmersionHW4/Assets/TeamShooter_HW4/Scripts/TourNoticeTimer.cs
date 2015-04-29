@@ -35,21 +35,21 @@ public class TourNoticeTimer : MonoBehaviour {
 	void TourIn10(){
 		tourNotice.clip = farOffNotice;
 		tourNotice.pitch = .75f;
-		tourNotice.volume = 1;
+		tourNotice.volume = .7f;
 		tourNotice.Play();
 		UImanager.AddNotification(Color.cyan, "Tour", "Tour Starting in 15 minutes!", 5);
 	}
 	void TourIn5(){
 		tourNotice.clip = farOffNotice;
 		tourNotice.pitch = .85f;
-		tourNotice.volume = 1;
+		tourNotice.volume = .7f;
 		tourNotice.Play();
 		UImanager.AddNotification(Color.cyan, "Tour", "Tour Starting in 10 minutes!", 5);
 	}
 	void TourIn3(){
 		tourNotice.clip = farOffNotice;
 		tourNotice.pitch = 1f;
-		tourNotice.volume = 1;
+		tourNotice.volume = .7f;
 		tourNotice.Play();
 		UImanager.AddNotification(Color.cyan, "Tour", "Tour Starting in 5 minutes!", 5);
 	}
