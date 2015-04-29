@@ -45,15 +45,6 @@ public class UIManager : MonoBehaviour
 		foreach (NotificationWrapper notification in notificationsList)
 			if (notification.active)
 				notification.timeActive += Time.deltaTime;
-
-		if (Input.GetKeyDown(KeyCode.U))
-			AddNotification(new Color(1.0f, 0, 0), "LOL", "YOU HAVE BEEN INDICTED", 3.0f);
-		if (Input.GetKeyDown(KeyCode.I))
-			AddNotification(new Color(0f, 0.5f, 0), "ROFL", "1234567890-asdfghjkl;',mnbvcxzadfghjkjhgfdszv", 4.0f);
-		if (Input.GetKeyDown(KeyCode.O))
-			AddNotification(new Color(1.0f, 0, 1.0f), "LMAO", "ayy lmao", 5.0f, Random.value * 360.0f);
-		if (Input.GetKeyDown(KeyCode.P))
-			AddNotification(new Color(1.0f, 0.5f, 0.5f), "qwerty", "owienraknf", 6.0f, Random.value * 360.0f);
 	}
 
 	public int AddNotification(Color color, string typeText, string infoText, float timeDisplayed)
