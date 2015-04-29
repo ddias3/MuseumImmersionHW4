@@ -16,7 +16,7 @@ public class MueseumClosingScript : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.V)){
 			closingAlert.Play();
-			UImanager.AddNotification(Color.red, "Museum is Clsoing", "The Museum is now closed! Please exit the building", 5);
+			UImanager.AddNotification(Color.red, "Museum is Closing", "The Museum is now closed!", 5);
 		}
 	}
 }
