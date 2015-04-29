@@ -8,6 +8,8 @@ public class proximitySoundNode : MonoBehaviour {
 	public float distance;
 	public float playerThres = 4f;
 	public bool hasBeenVisited = false;
+	public bool shouldCountVisitation = true;
+	public bool isInterestNode = false;
 
 	public int soundTier = 1;
 
@@ -23,6 +25,8 @@ public class proximitySoundNode : MonoBehaviour {
 	public AudioSource tier2Sound;
 	public AudioSource tier3Sound;
 
+	public UIManager UImanager;
+
 
 	// Use this for initialization
 	void Start () {
@@ -36,7 +40,9 @@ public class proximitySoundNode : MonoBehaviour {
 		}
 		distance = Vector3.Distance(transform.position, player.transform.position);
 		if(distance <= playerThres){
+			if(shouldCountVisitation){
 			hasBeenVisited = true;
+			}
 		}
 		else{
 			if(distance < distTier1){
@@ -66,15 +72,36 @@ public class proximitySoundNode : MonoBehaviour {
 		if(hasBeenVisited == false){
 			if(soundTier == 1){
 				tier0Sound.Play ();
+				if(isInterestNode){
+
+					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is right here!", 5f);
+
+					//UImanager.SetArrowAngle(myID, Vector3.Angle(player.transform.position, transform.position));
+				}
 			}
 			else if(soundTier == 2){
 				tier1Sound.Play ();
+				if(isInterestNode){
+					
+					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is very close", 5f);
+					//UImanager.SetArrowAngle(myID, Vector3.Angle(player.transform.position, transform.position));
+				}
 			}
 			else if(soundTier == 3){
 				tier2Sound.Play ();
+				if(isInterestNode){
+					
+					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is in the area.", 5f);
+					//UImanager.SetArrowAngle(myID, Vector3.Angle(player.transform.position, transform.position));
+				}
 			}
 			else if(soundTier == 4){
 				tier3Sound.Play ();
+				if(isInterestNode){
+					
+					int myID = UImanager.AddNotification(Color.green, "InterestTag", "The thing you are interested in is far off.", 5f);
+					//UImanager.SetArrowAngle(myID, Vector3.Angle(player.transform.position, transform.position));
+				}
 			}
 		}
 	}
